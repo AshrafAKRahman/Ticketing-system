@@ -14,7 +14,9 @@ const App = () => {
     //async function to fetch data from the specified endpoint
     async function getInitialData() {
       //fetch data from the specified endpoint
-      let response = await fetch("http://localhost:8000/api/tickets");
+      let response = await fetch(
+        "https://just-the-ticket-backend.onrender.com/api/tickets"
+      );
       //parse the fetched data as JSON
       let data = await response.json();
       //set the fetched data as the value of the `ticketList` state
@@ -74,7 +76,7 @@ const App = () => {
     });
 
     const postData = async () => {
-      await fetch("http://localhost:8000/api/tickets", {
+      await fetch("https://just-the-ticket-backend.onrender.com/api/tickets", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(ticket),
@@ -86,7 +88,9 @@ const App = () => {
     await postData();
 
     const getData = async () => {
-      let response = await fetch("http://localhost:8000/api/tickets");
+      let response = await fetch(
+        "https://just-the-ticket-backend.onrender.com/api/tickets"
+      );
       console.log("✅ All tickets READ");
       let data = await response.json();
       setTicketList(data);
@@ -130,16 +134,21 @@ const App = () => {
       event.preventDefault();
 
       const deleteData = async () => {
-        await fetch(`http://localhost:8000/api/tickets/${ticketId}`, {
-          method: "DELETE",
-        }).then(() => {
+        await fetch(
+          `https://just-the-ticket-backend.onrender.com/api/tickets/${ticketId}`,
+          {
+            method: "DELETE",
+          }
+        ).then(() => {
           console.log(`✅ Ticket ${ticketId} DELETED`);
         });
       };
       await deleteData();
 
       const getData = async () => {
-        let response = await fetch("http://localhost:8000/api/tickets");
+        let response = await fetch(
+          "https://just-the-ticket-backend.onrender.com/api/tickets"
+        );
         let data = await response.json();
         setTicketList(data);
       };
