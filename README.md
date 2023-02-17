@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Helpdesk Ticketing System
+This is a web-based helpdesk ticketing system created using React and styled with CSS. The app allows users to raise tickets, view current tickets and their details, and manage them.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+#### Raise Tickets: 
+Users can raise tickets by filling out a form with information about the issue they are experiencing.
 
-## Available Scripts
+#### View Current Tickets: 
+Users can view the current tickets that have been raised, and toggle their visibility using the Collapsible component.
 
-In the project directory, you can run:
+#### Manage Tickets: 
+Users can view the details of a specific ticket and manage it accordingly.
 
-### `npm start`
+## Getting Started
+#### Deployed site
+- [Helpdesk](https://frontend-ticketing.onrender.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### From IDE
+To use the helpdesk ticketing system, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone the repository to your local machine.
 
-### `npm test`
+Run npm install to install the necessary dependencies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run npm start to start the app.
 
-### `npm run build`
+The app will open in your web browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Folder Structure
+#### src: 
+The main folder for the app's source code
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### assets: 
+Folder containing the images used in the app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### components: 
+Folder containing React components used in the app
+- App.js - main component that renders the app's pages and components
+- Collapsible.js - component containing current tickets and displaying them when toggled
+- Form.js - form containing Inputs and buttons, the main component of the page
+- Heading.js - component containing the heading and title
+- Input.js - component holding the props for the expected input into the form
+- Navbar.js - component holding all elements for the navbar
+- Textarea.js - component holding all the props for the area where the text is being handled
+- TicketDetails.js - component holding a div with the details of the ticket raised
 
-### `npm run eject`
+## API Integration
+This helpdesk ticketing system is connected to a backend repository at https://github.com/AshrafAKRahman/Ticketing-System-Backend using a fetch request in the App.js file. The app fetches ticket data from the backend and displays it in the UI.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Authors
+- [Adie Nunn](https://github.com/cowtipping)
+- [Ashraf Rahman](https://portfolio-bp1e.onrender.com/)
+- [Callum Cheshire](https://github.com/callum-cheshire/callum-cheshire)
+- [Shane Downes](https://github.com/shane-downes/shane-downes)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
